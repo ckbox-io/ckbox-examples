@@ -1,5 +1,5 @@
 {
-  "name": "vue",
+  "name": "ckbox-example-vue",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
