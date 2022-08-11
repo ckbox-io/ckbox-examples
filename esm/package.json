@@ -1,0 +1,17 @@
+{
+  "name": "ckbox-example-esm",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "start": "vite preview"
+  },
+  "dependencies": {
+    "ckbox": "^1.1.1"
+  },
+  "devDependencies": {
+    "typescript": "~4.7.4",
+    "vite": "^3.0.5"
+  }
+}

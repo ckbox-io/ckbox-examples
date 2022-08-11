@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>UMD Sample</title>
+        <script src="ckbox.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script>
+            CKBox.mount(document.getElementById('root'), {
+                assets: {
+                    onChoose: (assets) => {
+                        console.log(assets);
+                    }
+                },
+                dialog: true,
+                tokenUrl: 'https://your.token.url/'
+            });
+        </script>
+    </body>
+</html>

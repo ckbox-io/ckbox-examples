@@ -1,0 +1,9 @@
+<section>
+    <h3>Inline CKBox with custom event handler</h3>
+    <div #ckbox class="ckbox-container"></div>
+    <ul>
+        <li *ngFor="let item of selectedItems">
+            {{ item.id }} - {{ item.name }} - {{ item.imageUrl }}
+        </li>
+    </ul>
+</section>

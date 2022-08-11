@@ -1,0 +1,8 @@
+body {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.route__list {
+    list-style-type: none;
+}
