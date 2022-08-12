@@ -1,5 +1,4 @@
-import * as React from 'react';
-import * as CKBox from 'ckbox/dist/ckbox.js';
+import React from 'react';
 
 function App() {
     const ref = React.useRef<HTMLDivElement | null>(null);
@@ -13,7 +12,7 @@ function App() {
 
         const { unmount } = CKBox.mount(root, {
             assets: {
-                onChoose: (assets: any) => {
+                onChoose: (assets) => {
                     /* eslint-disable-next-line */
                     console.log(assets);
                 }
@@ -27,7 +26,7 @@ function App() {
                 }
             },
             dialog: true,
-            tokenUrl: 'https://your.token.url/'
+            tokenUrl: 'https://your.token.url'
         });
 
         return () => {

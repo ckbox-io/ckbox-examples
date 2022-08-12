@@ -13,7 +13,7 @@ const ckbox = ref();
 
 onMounted(() => {
     CKBox.mount(ckbox.value, {
-        tokenUrl: 'https://your.token.url/'
+        tokenUrl: 'https://your.token.url'
     });
 });
 </script>

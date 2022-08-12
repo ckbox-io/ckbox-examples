@@ -1,15 +1,17 @@
 {
+  "name": "ckbox-example-umd",
+  "version": "0.0.0",
   "private": true,
-  "type": "module",
   "scripts": {
-    "build": "node ./build.js",
-    "start": "http-server dist -p 4173"
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "start": "vite preview"
   },
   "dependencies": {
-    "ckbox": "^1.1.1",
-    "http-server": "^14.1.1"
+    "ckbox": "^1.1.1"
   },
   "devDependencies": {
-    "fs-extra": "^10.1.0"
+    "typescript": "~4.7.4",
+    "vite": "^3.0.5"
   }
 }

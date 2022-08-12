@@ -1,0 +1,25 @@
+# CKBox ESM example
+
+## Quick start
+
+:warning: Please use your own `tokenUrl` before running the sample. See [documentation](https://ckeditor.com/docs/ckbox/latest/guides/configuration/authentication.html) for more info.
+
+```
+npm install
+```
+
+Build sample:
+
+```
+npm run build
+```
+
+Serve sample:
+
+```
+npm start
+```
+
+## Documentation
+
+Please refer to our official [documentation](https://ckeditor.com/docs/ckbox/latest/guides/frameworks/other.html#ecmascript-export) for more info.

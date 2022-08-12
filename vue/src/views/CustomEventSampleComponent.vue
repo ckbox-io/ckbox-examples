@@ -21,7 +21,7 @@ const state = reactive({
 
 onMounted(() => {
     CKBox.mount(ckbox.value, {
-        tokenUrl: 'https://your.token.url/',
+        tokenUrl: 'https://your.token.url',
         assets: {
             onChoose: (assets) => {
                 state.selectedItems = assets.map((asset) => ({

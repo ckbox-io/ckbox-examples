@@ -10,7 +10,7 @@ In addition, following examples can be found:
 
 -   [Using CKBox as an ECMAScript module](esm)
 -   [Using UMD build of CKBox](umd)
--   [Using CKBox with server-side rendering](react-ssr)
+-   [Using CKBox with Next.js](react-nextjs)
 -   [Using CKBox with a legacy version of React](react-legacy)
 
 ## Quick start
@@ -36,6 +36,8 @@ Serve sample:
 ```
 npm start
 ```
+
+Sample will be available at http://localhost:4137.
 
 ## Documentation
 
