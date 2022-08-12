@@ -20,6 +20,8 @@ Serve sample:
 npm start
 ```
 
+Sample will be available at http://localhost:4137.
+
 ## Documentation
 
 Please refer to our official [documentation](https://ckeditor.com/docs/ckbox/latest/guides/frameworks/react-integration.html) for more info.
