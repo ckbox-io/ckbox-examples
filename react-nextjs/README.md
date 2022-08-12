@@ -1,4 +1,4 @@
-# CKBox React integration (Server-side rendering)
+# CKBox React integration (Next.js)
 
 ## Quick start
 
