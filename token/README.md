@@ -27,7 +27,7 @@ Serve sample:
 npm start
 ```
 
-Sample will be available at http://localhost:4137.
+Sample will be available at http://localhost:4137. Use following credentials to log in:
 
 ```
 Login: ckbox
@@ -37,5 +37,7 @@ Password: ckbox
 ## Documentation
 
 Please refer to official [CKBox documentation](https://ckeditor.com/docs/ckbox/latest/guides/configuration/authentication.html) for more info.
+
 Detailed info regarding environments management can be found [here](https://ckeditor.com/docs/cs/latest/guides/environments-management.html).
+
 Info regarding token endpoints can be found [here](https://ckeditor.com/docs/cs/latest/guides/security/token-endpoint.html).
