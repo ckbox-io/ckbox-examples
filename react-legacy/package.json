@@ -8,15 +8,15 @@
     "start": "vite preview"
   },
   "dependencies": {
-    "ckbox": "^1.1.1",
+    "ckbox": "^1.2.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@types/react": "^17.0.39",
-    "@types/react-dom": "^17.0.11",
-    "@vitejs/plugin-react": "^2.0.0",
-    "typescript": "~4.7.4",
-    "vite": "^3.0.5"
+    "@types/react": "^17.0.52",
+    "@types/react-dom": "^17.0.18",
+    "@vitejs/plugin-react": "^2.2.0",
+    "typescript": "~4.9.3",
+    "vite": "^3.2.4"
   }
 }
