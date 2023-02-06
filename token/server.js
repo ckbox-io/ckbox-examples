@@ -15,8 +15,7 @@ const getToken = (userId, role) => {
             sub: userId,
             auth: {
                 ckbox: {
-                    role,
-                    context: 'example-user-context'
+                    role
                 }
             }
         },
