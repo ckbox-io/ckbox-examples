@@ -2,16 +2,20 @@
 
 This repository contains various examples of how CKBox can be integrated with a client app. In particular, showcases for the following popular frameworks and libraries are provided:
 
--   [Angular](angular)
--   [Vue](vue)
--   [React](react)
+- [Angular](angular)
+- [Vue](vue)
+- [React](react)
 
 In addition, following examples can be found:
 
--   [Using CKBox as an ECMAScript module](esm)
--   [Using UMD build of CKBox](umd)
--   [Using CKBox with Next.js](react-nextjs)
--   [Using CKBox with a legacy version of React](react-legacy)
+- [Using CKBox as an ECMAScript module](esm)
+- [Using UMD build of CKBox](umd)
+- [Using CKBox with Next.js](react-nextjs)
+- [Using CKBox with a legacy version of React](react-legacy)
+
+Also, an example on how to build a token endpoint is included:
+
+- [Token endpoint for CKBox](token)
 
 ## Quick start
 
