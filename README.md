@@ -29,7 +29,7 @@ Install dependencies before running a sample:
 npm install
 ```
 
-Build sample:
+Build sample (this step should be omitted in the _token_ sample):
 
 ```
 npm run build
