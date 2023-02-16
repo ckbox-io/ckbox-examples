@@ -12,6 +12,7 @@ In addition, following examples can be found:
 - [Using UMD build of CKBox](umd)
 - [Using CKBox with Next.js](react-nextjs)
 - [Using CKBox with a legacy version of React](react-legacy)
+- [Using CKBox with Webpack](webpack)
 
 Also, an example on how to build a token endpoint is included:
 
