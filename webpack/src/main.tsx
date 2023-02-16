@@ -1,4 +1,5 @@
-import 'ckbox/dist/ckbox.js';
+import * as CKBox from 'ckbox';
+import 'ckbox/dist/styles/ckbox.css';
 
 const app = document.querySelector<HTMLDivElement>('#app');
 
