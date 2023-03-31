@@ -30,7 +30,7 @@ Install dependencies before running a sample:
 npm install
 ```
 
-Build sample (this step should be omitted in the _token_ sample):
+Build sample (this step should be omitted in the _token_ and _rest-api_ samples):
 
 ```
 npm run build
