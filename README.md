@@ -18,9 +18,7 @@ In addition, following examples can be found:
 
 ## Quick start
 
-:warning: Each instance of CKBox requires `tokenUrl` to be configured. Please use your own url before running a sample. See [documentation](https://ckeditor.com/docs/ckbox/latest/guides/configuration/authentication.html) for more info.
-
-Each example is exposed as a separate package that provides a set of common commands.
+Each sample is a stand-alone package that provides a set of common commands. For more detailed instructions please refer to sample's README.
 
 Install dependencies before running a sample:
 
@@ -28,7 +26,7 @@ Install dependencies before running a sample:
 npm install
 ```
 
-Build sample (this step should be omitted in the _token_ and _rest-api_ samples):
+Build sample (not required by every sample):
 
 ```
 npm run build
