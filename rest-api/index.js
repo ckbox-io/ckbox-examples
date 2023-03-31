@@ -1,8 +1,11 @@
 const jwt = require('jsonwebtoken');
 const axios = require('axios');
 
-const ENVIRONMENT_ID = '<your_environment_id>'; // Provide your environment ID
-const ACCESS_KEY = '<your_access_key>';         // Provide your access key
+// Provide your environment ID
+const ENVIRONMENT_ID = '<your_environment_id>';
+
+// Provide your access key
+const ACCESS_KEY = '<your_access_key>';
 
 const getToken = (userId, role) => {
     return jwt.sign(
@@ -22,10 +25,11 @@ const getToken = (userId, role) => {
     );
 };
 
-axios.get('https://api.ckbox.io/categories', {
+axios
+    .get('https://api.ckbox.io/categories', {
         headers: {
             Authorization: getToken('dummy-admin-id', 'admin')
         }
     })
-    .then(response => console.dir(response.data, { depth: 5 }))
-    .catch(error => console.error(error.response.data));
+    .then((response) => console.dir(response.data, { depth: 5 }))
+    .catch((error) => console.error(error.response.data));

@@ -5,7 +5,10 @@ const { BasicStrategy } = require('passport-http');
 
 require('dotenv').config();
 
+// Provide your environment ID
 const ENVIRONMENT_ID = process.env.ENVIRONMENT_ID;
+
+// Provide your access key
 const ACCESS_KEY = process.env.ACCESS_KEY;
 
 const getToken = (userId, role) => {

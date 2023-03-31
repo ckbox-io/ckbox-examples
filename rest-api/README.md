@@ -20,4 +20,4 @@ The sample will send a request to the CKBox REST API service and print the respo
 
 ## Documentation
 
-This code example shows a simple application that connects to the CKBox REST API service. The [complete article](https://ckeditor.com/docs/ckbox/latest/guides/rest-api.html) can be found the [official CKBox documentation](https://ckeditor.com/docs/ckbox/latest/).
+This code example shows a simple application that connects to the CKBox REST API service. The [complete article](https://ckeditor.com/docs/ckbox/latest/guides/rest-api.html) can be found in the [official CKBox documentation](https://ckeditor.com/docs/ckbox/latest/).
