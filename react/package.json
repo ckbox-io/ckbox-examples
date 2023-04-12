@@ -5,19 +5,19 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "start": "vite preview"
+    "start": "vite preview --port 4137"
   },
   "dependencies": {
-    "@ckbox/components": "^1.2.1",
-    "@ckbox/core": "^1.3.1",
+    "@ckbox/components": "^1.4.0",
+    "@ckbox/core": "^1.4.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.25",
-    "@types/react-dom": "^18.0.9",
-    "@vitejs/plugin-react": "^2.2.0",
-    "typescript": "~4.9.3",
-    "vite": "^3.2.4"
+    "@types/react": "^18.0.35",
+    "@types/react-dom": "^18.0.11",
+    "@vitejs/plugin-react": "^3.1.0",
+    "typescript": "~5.0.4",
+    "vite": "^4.2.1"
   }
 }
