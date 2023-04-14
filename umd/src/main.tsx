@@ -1,4 +1,4 @@
-import 'ckbox/dist/ckbox.js';
+import 'https://cdn.ckbox.io/CKBox/1.4.0/ckbox.js';
 
 const app = document.querySelector<HTMLDivElement>('#app');
 

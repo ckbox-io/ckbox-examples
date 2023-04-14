@@ -1,4 +1,3 @@
-import * as React from 'react';
 import { CKBox } from '@ckbox/core';
 
 function App() {

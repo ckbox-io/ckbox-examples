@@ -8,28 +8,31 @@ module.exports = {
             {
                 test: /\.tsx?$/,
                 use: 'ts-loader',
-                exclude: /node_modules/,
+                exclude: /node_modules/
             },
             {
                 test: /\.css$/i,
-                use: ['style-loader', 'css-loader'],
-            },
-        ],
+                use: ['style-loader', 'css-loader']
+            }
+        ]
     },
+    devtool: 'source-map',
     resolve: {
-        extensions: ['.tsx', '.ts', '.js'],
+        extensions: ['.tsx', '.ts', '.js']
     },
     output: {
         filename: 'main.js',
-        path: path.resolve(__dirname, 'dist'),
+        path: path.resolve(__dirname, 'dist')
     },
-    plugins: [new HtmlWebpackPlugin({
-        template: path.resolve(__dirname, 'index.html'),
-    })],
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: path.resolve(__dirname, 'index.html')
+        })
+    ],
     devServer: {
         compress: true,
         port: 4137,
-        open: true,
-      },
-    mode: 'development',
+        open: true
+    },
+    mode: 'development'
 };
