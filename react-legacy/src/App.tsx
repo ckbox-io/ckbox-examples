@@ -1,5 +1,5 @@
 import React from 'react';
-import 'https://cdn.ckbox.io/CKBox/1.4.0/ckbox.js';
+import 'ckbox/dist/ckbox.js';
 
 function App() {
     const ref = React.useRef<HTMLDivElement | null>(null);

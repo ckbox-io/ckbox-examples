@@ -8,15 +8,15 @@
     "start": "next start -p 4137"
   },
   "dependencies": {
-    "@ckbox/components": "^1.4.0",
-    "@ckbox/core": "^1.4.0",
-    "next": "^13.3.0",
+    "@ckbox/components": "^1.5.0",
+    "@ckbox/core": "^1.5.0",
+    "next": "^13.4.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/node": "^18.15.11",
-    "@types/react": "^18.0.35",
+    "@types/node": "^20.1.5",
+    "@types/react": "^18.2.6",
     "typescript": "~5.0.4"
   }
 }
