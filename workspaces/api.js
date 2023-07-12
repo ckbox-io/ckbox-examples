@@ -1,4 +1,5 @@
 const { getToken } = require('./token');
+const axios = require('axios');
 
 require('dotenv').config();
 
@@ -6,23 +7,19 @@ require('dotenv').config();
 const SERVICE_ORIGIN = process.env.SERVICE_ORIGIN;
 
 const getAllWorkspaces = () => {
-    return fetch(`${SERVICE_ORIGIN}/workspaces`, {
-        method: 'GET',
+    return axios.get(`${SERVICE_ORIGIN}/workspaces`, {
         headers: { Authorization: getToken('superadmin') }
-    }).then((value) => value.json());
+    }).then((response) => response.data);
 };
 
 const createWorkspace = (name) => {
-    return fetch(`${SERVICE_ORIGIN}/superadmin/workspaces`, {
-        body: JSON.stringify({ name }),
-        method: 'POST',
+    return axios.post(`${SERVICE_ORIGIN}/superadmin/workspaces`, JSON.stringify({ name }), {
         headers: { Authorization: getToken('superadmin') }
-    }).then((value) => value.json());
+    }).then((response) => response.data);
 };
 
 const deleteWorkspace = (id) => {
-    return fetch(`${SERVICE_ORIGIN}/superadmin/workspaces/${id}`, {
-        method: 'DELETE',
+    return axios.delete(`${SERVICE_ORIGIN}/superadmin/workspaces/${id}`, {
         headers: { Authorization: getToken('superadmin') }
     });
 };

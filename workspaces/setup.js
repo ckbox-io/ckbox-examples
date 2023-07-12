@@ -9,6 +9,6 @@ Promise.all(process.env.WORKSPACES.split(',').map(createWorkspace))
     .then((workspaces) => {
         console.log('Workspaces created successfully!');
         console.log('Use following IDs to restrict user access to workspaces:');
-        console.log(workspaces.items.map(({ id }) => id));
+        console.log(workspaces.items);
     })
     .catch(console.error);

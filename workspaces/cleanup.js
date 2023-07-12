@@ -4,7 +4,7 @@ require('dotenv').config();
 
 getAllWorkspaces()
     .then((workspaces) => {
-        // Do not remove default workspace
+        // The default workspace cannot be removed, so skip it.
         return Promise.all(
             workspaces.items.slice(1).map(({ id }) => deleteWorkspace(id))
         );

@@ -14,7 +14,7 @@ Users with `superadmin` role have unrevovkable access to all workspaces.
 ```
 ENVIRONMENT_ID=***
 ACCESS_KEY=***
-SERVICE_ORIGIN=***
+SERVICE_ORIGIN=https://api.ckbox.io
 WORKSPACES=***
 ```
 
@@ -53,7 +53,7 @@ In order to delete all workspaces except for default workspace run `node cleanup
 
 Note: User with `superadmin` role will have access to all workspaces.
 
-5. Go to `public/index.html` file and adjust `tokenUrl`, `serviceOrigin`, and `assetsOrigin` config.
+5. Go to `public/index.html` file and adjust the `tokenUrl` config.
 
 Serve sample:
 
