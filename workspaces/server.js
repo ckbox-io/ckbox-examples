@@ -4,7 +4,6 @@ const { getToken } = require('./token');
 
 require('dotenv').config();
 
-// Extracted from in .env file.
 const USER_ALLOWED_WORKSPACES = process.env.USER_ALLOWED_WORKSPACES.split(',');
 const ADMIN_ALLOWED_WORKSPACES =
     process.env.ADMIN_ALLOWED_WORKSPACES.split(',');

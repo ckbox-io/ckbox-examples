@@ -18,8 +18,10 @@ SERVICE_ORIGIN=https://api.ckbox.io
 WORKSPACES=***
 ```
 
-Values for ENVIRONMENT_ID and ACCESS_KEY can be found in the dashboard.
-SERVICE_ORIGIN is where CKBox API can be accessed.
+Values for `ENVIRONMENT_ID` and `ACCESS_KEY` can be found in the dashboard.
+
+`SERVICE_ORIGIN` is where CKBox API can be accessed.
+
 WORKSPACES is a list of all workspaces that will be created by `setup.js` script. Use comma-separated values, e.g.:
 
 ```
@@ -45,10 +47,14 @@ USER_ALLOWED_WORKSPACES=***
 ADMIN_ALLOWED_WORKSPACES=***
 ```
 
-USER_ALLOWED_WORKSPACES is a comma-separated list of workspace IDs that `user` role will have access to.
-ADMIN_ALLOWED_WORKSPACES is a comma-separated list of workspace IDs that `admin` role will have access to.
+`USER_ALLOWED_WORKSPACES` is a comma-separated list of workspace IDs that `user` role will have access to.
+
+`ADMIN_ALLOWED_WORKSPACES` is a comma-separated list of workspace IDs that `admin` role will have access to.
+
 Use IDs from the list returned by `node setup` script.
+
 In order to list all workspaces run `node list`.
+
 In order to delete all workspaces except for default workspace run `node cleanup`.
 
 Note: User with `superadmin` role will have access to all workspaces.

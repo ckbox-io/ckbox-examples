@@ -15,6 +15,7 @@ In addition, following examples can be found:
 -   [Token endpoint for CKBox](token)
 -   [Using UMD build of CKBox](umd)
 -   [Using CKBox with Webpack](webpack)
+-   [Using workspaces](workspaces)
 
 ## Quick start
 

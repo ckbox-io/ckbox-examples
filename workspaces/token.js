@@ -2,7 +2,6 @@ const jwt = require('jsonwebtoken');
 
 require('dotenv').config();
 
-// Extracted from in .env file.
 const ENVIRONMENT_ID = process.env.ENVIRONMENT_ID;
 const ACCESS_KEY = process.env.ACCESS_KEY;
 
