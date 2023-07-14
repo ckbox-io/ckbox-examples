@@ -12,7 +12,7 @@ export class CustomEventSampleComponent {
 
     ngAfterViewInit(): void {
         CKBox.mount(this.ckboxRoot?.nativeElement, {
-            tokenUrl: 'https://dev.ckbox.io/demo/token/',
+            tokenUrl: 'https://your.token.url',
             assets: {
                 onChoose: (assets) => {
                     this.selectedItems = assets.map((asset) => ({

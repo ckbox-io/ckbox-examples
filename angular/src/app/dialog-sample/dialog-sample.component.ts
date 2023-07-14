@@ -19,7 +19,7 @@ export class DialogSampleComponent {
             this.unmountCallback();
         } else {
             const { unmount } = CKBox.mount(this.ckboxRoot?.nativeElement, {
-                tokenUrl: 'https://dev.ckbox.io/demo/token/',
+                tokenUrl: 'https://your.token.url',
                 dialog: {
                     height: 600,
                     width: 800,

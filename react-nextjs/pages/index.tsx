@@ -16,7 +16,7 @@ export default function Home() {
                 }
             }}
             dialog={true}
-            tokenUrl="https://dev.ckbox.io/demo/token/"
+            tokenUrl="https://your.token.url"
         />
     );
 }

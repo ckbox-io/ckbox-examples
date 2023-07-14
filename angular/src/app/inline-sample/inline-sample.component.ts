@@ -11,7 +11,7 @@ export class InlineSampleComponent implements AfterViewInit {
 
     ngAfterViewInit(): void {
         CKBox.mount(this.ckboxRoot?.nativeElement, {
-            tokenUrl: 'https://dev.ckbox.io/demo/token/'
+            tokenUrl: 'https://your.token.url'
         });
     }
 }

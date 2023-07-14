@@ -19,7 +19,7 @@ function toggleDialog() {
         state.unmountCallback();
     } else {
         const { unmount } = CKBox.mount(ckbox.value, {
-            tokenUrl: 'https://dev.ckbox.io/demo/token/',
+            tokenUrl: 'https://your.token.url',
             dialog: {
                 height: 600,
                 width: 800,
