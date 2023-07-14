@@ -2,21 +2,23 @@
   "name": "ckbox-example-webpack",
   "version": "0.0.0",
   "scripts": {
-    "start": "webpack serve",
+    "dev": "webpack serve --port 5173",
+    "start": "http-server dist -p 4137",
     "build": "webpack"
   },
   "dependencies": {
-    "ckbox": "^1.5.1"
+    "ckbox": "^1.6.0"
   },
   "devDependencies": {
-    "@types/node": "^20.2.3",
-    "css-loader": "^6.7.4",
-    "html-webpack-plugin": "^5.5.1",
+    "@types/node": "^20.4.2",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "http-server": "^14.1.1",
     "style-loader": "^3.3.3",
-    "ts-loader": "^9.4.3",
-    "typescript": "~5.0.4",
-    "webpack": "^5.84.0",
-    "webpack-cli": "^5.1.1",
-    "webpack-dev-server": "^4.15.0"
+    "ts-loader": "^9.4.4",
+    "typescript": "~5.1.6",
+    "webpack": "^5.88.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
   }
 }
