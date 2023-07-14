@@ -10,7 +10,7 @@ function App() {
                 }
             }}
             dialog={true}
-            tokenUrl="https://your.token.url"
+            tokenUrl="https://dev.ckbox.io/demo/token/"
         />
     );
 }

@@ -8,16 +8,16 @@
     "start": "vite preview --port 4137"
   },
   "dependencies": {
-    "@ckbox/components": "^1.5.1",
-    "@ckbox/core": "^1.5.1",
+    "@ckbox/components": "^1.6.0",
+    "@ckbox/core": "^1.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "@types/react": "^18.2.7",
-    "@types/react-dom": "^18.2.4",
-    "@vitejs/plugin-react": "^4.0.0",
-    "typescript": "~5.0.4",
-    "vite": "^4.3.8"
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.0.3",
+    "typescript": "~5.1.6",
+    "vite": "^4.4.4"
   }
 }
