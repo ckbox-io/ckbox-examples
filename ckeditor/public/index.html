@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <script src="https://www.unpkg.com/@ckeditor/ckeditor5-build-classic@0.0.0-nightly-20230731.0/build/ckeditor.js"></script>
+        <script src="https://cdn.ckbox.io/ckbox/2.0.0/ckbox.js"></script>
+    </head>
+    <body>
+        <div id="editor"></div>
+        <script>
+            ClassicEditor.create(document.querySelector('#editor'), {
+                ckbox: {
+                    tokenUrl: 'https://your.token.url'
+                },
+                toolbar: [
+                    'ckbox',
+                    'imageUpload',
+                    '|',
+                    'heading',
+                    '|',
+                    'undo',
+                    'redo',
+                    '|',
+                    'bold',
+                    'italic',
+                    '|',
+                    'blockQuote',
+                    'indent',
+                    'link',
+                    '|',
+                    'bulletedList',
+                    'numberedList'
+                ]
+            }).catch((error) => {
+                console.error(error);
+            });
+        </script>
+    </body>
+</html>

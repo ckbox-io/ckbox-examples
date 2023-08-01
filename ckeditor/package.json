@@ -1,0 +1,11 @@
+{
+  "name": "ckbox-example-ckeditor",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "private": true,
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
