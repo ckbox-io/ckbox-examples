@@ -4,7 +4,8 @@
         <div ref="ckbox" className="ckbox-container"></div>
         <ul>
             <li v-for="item in state.selectedItems">
-                {{ item.id }} - {{ item.name }} - {{ item.imageUrl }}
+                {{ item.id }} - {{ item.name }} -
+                <a target="_blank" v-bind:href="item.url">{{ item.url }}</a>
             </li>
         </ul>
     </section>
@@ -16,7 +17,7 @@ import { onMounted, reactive, ref } from 'vue';
 
 const ckbox = ref();
 const state = reactive({
-    selectedItems: [] as { id: string; name: string; imageUrl: string }[]
+    selectedItems: [] as { id: string; name: string; url?: string }[]
 });
 
 onMounted(() => {
@@ -24,9 +25,10 @@ onMounted(() => {
         tokenUrl: 'https://your.token.url',
         assets: {
             onChoose: (assets) => {
-                state.selectedItems = assets.map((asset) => ({
-                    ...asset.data,
-                    imageUrl: asset.getUrl()
+                state.selectedItems = assets.map(({ data }) => ({
+                    id: data.id,
+                    name: data.name,
+                    url: data.url
                 }));
             }
         }

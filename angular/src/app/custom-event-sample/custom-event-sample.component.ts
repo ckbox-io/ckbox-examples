@@ -8,16 +8,17 @@ import * as CKBox from 'ckbox';
 })
 export class CustomEventSampleComponent {
     @ViewChild('ckbox') ckboxRoot?: ElementRef;
-    selectedItems: { id: string; name: string; imageUrl: string }[] = [];
+    selectedItems: { id: string; name: string; url?: string }[] = [];
 
     ngAfterViewInit(): void {
         CKBox.mount(this.ckboxRoot?.nativeElement, {
             tokenUrl: 'https://your.token.url',
             assets: {
                 onChoose: (assets) => {
-                    this.selectedItems = assets.map((asset) => ({
-                        ...asset.data,
-                        imageUrl: asset.getUrl()
+                    this.selectedItems = assets.map(({ data }) => ({
+                        id: data.id,
+                        name: data.name,
+                        url: data.url
                     }));
                 }
             }
