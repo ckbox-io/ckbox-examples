@@ -8,6 +8,7 @@ This repository contains various examples of how CKBox can be integrated with a 
 
 In addition, following examples can be found:
 
+-   [Using CKBox plugin for CKEditor](ckeditor)
 -   [Using CKBox as an ECMAScript module](esm)
 -   [Using CKBox with a legacy version of React](react-legacy)
 -   [Using CKBox with Next.js](react-nextjs)
