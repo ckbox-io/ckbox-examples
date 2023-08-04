@@ -4,9 +4,21 @@
         <meta charset="UTF-8" />
         <script src="https://cdn.ckeditor.com/ckeditor5/39.0.0/classic/ckeditor.js"></script>
         <script src="https://cdn.ckbox.io/ckbox/2.0.0/ckbox.js"></script>
+        <style>
+            .ckbox-ckeditor-container {
+                width: 800px;
+                margin: 50px auto;
+            }
+
+            .ck.ck-editor__editable_inline:not(.ck-editor__nested-editable) {
+                min-height: 400px;
+            }
+        </style>
     </head>
     <body>
-        <div id="editor"></div>
+        <div class="ckbox-ckeditor-container">
+            <div id="editor"></div>
+        </div>
         <script>
             ClassicEditor.create(document.querySelector('#editor'), {
                 ckbox: {
