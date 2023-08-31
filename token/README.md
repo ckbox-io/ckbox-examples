@@ -2,7 +2,7 @@
 
 :warning: This is just a code sample. It is NOT ready for production use!
 
-The role of token endpoints is to authorize end users of your application to use CKBox. Following token endpoints will be exposed by the server:
+Token endpoints are used to authorize end users of your application to use CKBox. Following token endpoints will be exposed by the server:
 
 -   `/token` - generates token with `user` role
 -   `/token/admin` - generates token with `admin` role
@@ -42,9 +42,9 @@ Password: ckbox
 
 OPTIONAL:
 
-1. Use `/token/superadmin` as `tokenUrl` to login as `superadmin` and create few workspaces in Settings / Superadmin view.
-2. Now, limit user's access to selected workspaces by adding `ALLOWED_WORKSPACES` to `.env` file with comma-separated list of workspace IDs user has access to, e.g. `ALLOWED_WORKSPACES=0S5-AoLLmWYoYu9-evzD,xTFVB3x6WQ1QSalptc71`.
-3. Use `/token` endpoint to login as `user`. Your access will be limited to workspaces listed via `ALLOWED_WORKSPACES`.
+1. Login as `superadmin` and create few workspaces under Settings / Superadmin view.
+2. Now, limit user's access to selected workspaces by adding `ALLOWED_WORKSPACES` to `.env` file with comma-separated list of workspace IDs user has access to, e.g. `ALLOWED_WORKSPACES=<workspace-1-ID>,<workspace-2-ID>`.
+3. Login as `user` and see that your access is limited to workspaces listed in `ALLOWED_WORKSPACES`.
 
 Please note that access to workspaces can be restricted for users with role `user` and `admin` only. Users with `superadmin` role have access to all workspaces.
 
