@@ -7,16 +7,16 @@
     "build": "webpack"
   },
   "dependencies": {
-    "ckbox": "^2.0.0"
+    "ckbox": "^2.1.0"
   },
   "devDependencies": {
-    "@types/node": "^20.4.5",
+    "@types/node": "^20.5.7",
     "css-loader": "^6.8.1",
     "html-webpack-plugin": "^5.5.3",
     "http-server": "^14.1.1",
     "style-loader": "^3.3.3",
     "ts-loader": "^9.4.4",
-    "typescript": "~5.1.6",
+    "typescript": "~5.2.2",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
     "webpack-dev-server": "^4.15.1"

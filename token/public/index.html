@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <script src="https://cdn.ckbox.io/ckbox/2.0.0/ckbox.js"></script>
+        <script src="https://cdn.ckbox.io/ckbox/2.1.0/ckbox.js"></script>
         <style>
             html,
             body {
@@ -20,8 +20,9 @@
             CKBox.mount(document.body, {
                 /**
                  * Replace with 'http://localhost:4137/token/admin' to unlock admin panel.
+                 * Replace with 'http://localhost:4137/token/superadmin' to manage workspaces.
                  */
-                tokenUrl: 'http://localhost:4137/token'
+                tokenUrl: 'http://localhost:4137/token/superadmin'
             });
         </script>
     </body>
