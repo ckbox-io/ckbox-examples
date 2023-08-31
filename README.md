@@ -16,31 +16,10 @@ In addition, following examples can be found:
 -   [Token endpoint for CKBox](token)
 -   [Using UMD build of CKBox](umd)
 -   [Using CKBox with Webpack](webpack)
--   [Using workspaces](workspaces)
 
 ## Quick start
 
 Each sample is a stand-alone package that provides a set of common commands. For more detailed instructions please refer to sample's README.
-
-Install dependencies before running a sample:
-
-```
-npm install
-```
-
-Build sample (not required by every sample):
-
-```
-npm run build
-```
-
-Serve sample:
-
-```
-npm start
-```
-
-Sample will be available at http://localhost:4137.
 
 ## Documentation
 

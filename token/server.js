@@ -1,38 +1,25 @@
+const cors = require('cors');
 const express = require('express');
 const jwt = require('jsonwebtoken');
 const passport = require('passport');
 const { BasicStrategy } = require('passport-http');
+const { getToken } = require('./token');
 
+// Specify required environment variables as per README
 require('dotenv').config();
 
-// Provide your environment ID
-const ENVIRONMENT_ID = process.env.ENVIRONMENT_ID;
+const USER_ID = 'ckbox';
+const USER_PASSWORD = 'ckbox';
 
-// Provide your access key
-const ACCESS_KEY = process.env.ACCESS_KEY;
-
-const getToken = (userId, role) => {
-    return jwt.sign(
-        {
-            aud: ENVIRONMENT_ID,
-            sub: userId,
-            auth: {
-                ckbox: {
-                    role
-                }
-            }
-        },
-        ACCESS_KEY,
-        {
-            algorithm: 'HS256'
-        }
-    );
-};
+// Limits access to listed workspaces
+const ALLOWED_WORKSPACES = process.env.ALLOWED_WORKSPACES
+    ? process.env.ALLOWED_WORKSPACES.split(',')
+    : undefined;
 
 passport.use(
     new BasicStrategy((userId, password, done) => {
-        if (userId === 'ckbox' && password === 'ckbox') {
-            return done(null, { userId: 'ckbox' });
+        if (userId === USER_ID && password === USER_PASSWORD) {
+            return done(null, { userId: USER_ID });
         }
 
         return done(null, false);
@@ -41,6 +28,8 @@ passport.use(
 
 const app = express();
 
+app.use(cors());
+
 app.use(passport.initialize());
 
 app.use(
@@ -48,20 +37,16 @@ app.use(
     express.static('public')
 );
 
-app.get(
-    '/token',
-    passport.authenticate('basic', { session: false }),
-    (req, res) => {
-        res.send(getToken(req.user.userId, 'user'));
-    }
-);
+app.get('/token', (_, res) => {
+    res.send(getToken('user', ALLOWED_WORKSPACES));
+});
 
-app.get(
-    '/token/admin',
-    passport.authenticate('basic', { session: false }),
-    (req, res) => {
-        res.send(getToken(req.user.userId, 'admin'));
-    }
-);
+app.get('/token/admin', (_, res) => {
+    res.send(getToken('admin', ALLOWED_WORKSPACES));
+});
+
+app.get('/token/superadmin', (_, res) => {
+    res.send(getToken('superadmin'));
+});
 
 app.listen(4137, () => console.log('Server running: http://localhost:4137'));
