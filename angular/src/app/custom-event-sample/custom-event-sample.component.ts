@@ -1,7 +1,10 @@
+import { CommonModule } from '@angular/common';
 import { Component, ElementRef, ViewChild } from '@angular/core';
 import * as CKBox from 'ckbox';
 
 @Component({
+    standalone: true,
+    imports: [CommonModule],
     selector: 'ckbox-custom-event-sample',
     templateUrl: './custom-event-sample.component.html',
     styleUrls: ['./custom-event-sample.component.css']
