@@ -1,12 +1,12 @@
 {
-  "name": "angular",
+  "name": "ckbox-example-angular",
+  "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "ng serve",
     "build": "ng build",
     "start": "http-server dist/angular/browser -p 4137"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^17.0.0",
     "@angular/common": "^17.0.0",
