@@ -2,6 +2,7 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 import * as CKBox from 'ckbox';
 
 @Component({
+    standalone: true,
     selector: 'ckbox-dialog-sample',
     templateUrl: './dialog-sample.component.html',
     styleUrls: ['./dialog-sample.component.css']
