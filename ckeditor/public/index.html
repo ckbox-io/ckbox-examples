@@ -2,8 +2,10 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <script src="https://cdn.ckeditor.com/ckeditor5/40.1.0/classic/ckeditor.js"></script>
-        <script src="https://cdn.ckbox.io/ckbox/2.3.1/ckbox.js"></script>
+        <link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/47.0.0/ckeditor5.css" crossorigin>
+        <link rel="stylesheet" href="https://cdn.ckbox.io/ckbox/2.9.1/styles/themes/lark.css">
+        <script src="https://cdn.ckeditor.com/ckeditor5/47.0.0/ckeditor5.umd.js" crossorigin></script>
+        <script src="https://cdn.ckbox.io/ckbox/2.9.1/ckbox.js"></script>
         <style>
             .ckbox-ckeditor-container {
                 width: 800px;
@@ -20,29 +22,55 @@
             <div id="editor"></div>
         </div>
         <script>
-            ClassicEditor.create(document.querySelector('#editor'), {
+            window.CKEDITOR.ClassicEditor.create(document.querySelector('#editor'), {
                 ckbox: {
-                    tokenUrl: 'https://your.token.url'
+                    tokenUrl: 'https://ogq0jhtp46z5.cke-cs.com/token/dev/89a92c6541a37db33b6bf789356c34caeada2f87e7279a22199e70575199?limit=10'
                 },
+                licenseKey: 'eyJhbGciOiJFUzI1NiJ9.eyJleHAiOjE3OTEzMzExOTksImp0aSI6ImY5NzlmYWFhLTBiYmEtNDg4Mi1iNWNiLWJlNDU2MmNmMzA1ZiIsInVzYWdlRW5kcG9pbnQiOiJodHRwczovL3Byb3h5LWV2ZW50LmNrZWRpdG9yLmNvbSIsImRpc3RyaWJ1dGlvbkNoYW5uZWwiOlsiY2xvdWQiLCJkcnVwYWwiXSwiZmVhdHVyZXMiOlsiRFJVUCIsIkUyUCIsIkUyVyJdLCJyZW1vdmVGZWF0dXJlcyI6WyJQQiIsIlJGIiwiU0NIIiwiVENQIiwiVEwiLCJUQ1IiLCJJUiIsIlNVQSIsIkI2NEEiLCJMUCIsIkhFIiwiUkVEIiwiUEZPIiwiV0MiLCJGQVIiLCJCS00iLCJGUEgiLCJNUkUiXSwidmMiOiJjNTc4ZGYwMCJ9.Ln1As3x6EUlvtMOcpmneImxev1WuCsnJF1JSqYt343YXlpeoAz1JE5A6xu7_GIqkcX1dLDgzmbH5D8pi9A-WfA',
                 toolbar: [
-                    'ckbox',
-                    'imageUpload',
-                    '|',
-                    'heading',
-                    '|',
                     'undo',
                     'redo',
                     '|',
+                    'heading',
+                    '|',
                     'bold',
                     'italic',
+                    'underline',
                     '|',
-                    'blockQuote',
-                    'indent',
                     'link',
+                    'insertImage',
+                    'ckbox',
+                    'blockQuote',
                     '|',
                     'bulletedList',
                     'numberedList'
-                ]
+                ],
+                plugins: [
+                    window.CKEDITOR.Autoformat,
+                    window.CKEDITOR.AutoImage,
+                    window.CKEDITOR.Autosave,
+                    window.CKEDITOR.BlockQuote,
+                    window.CKEDITOR.Bold,
+                    window.CKEDITOR.CKBox,
+                    window.CKEDITOR.CKBoxImageEdit,
+                    window.CKEDITOR.CloudServices,
+                    window.CKEDITOR.Heading,
+                    window.CKEDITOR.ImageBlock,
+                    window.CKEDITOR.ImageCaption,
+                    window.CKEDITOR.ImageInline,
+                    window.CKEDITOR.ImageInsert,
+                    window.CKEDITOR.ImageInsertViaUrl,
+                    window.CKEDITOR.ImageStyle,
+                    window.CKEDITOR.ImageTextAlternative,
+                    window.CKEDITOR.ImageUpload,
+                    window.CKEDITOR.Italic,
+                    window.CKEDITOR.Link,
+                    window.CKEDITOR.LinkImage,
+                    window.CKEDITOR.List,
+                    window.CKEDITOR.PictureEditing,
+                    window.CKEDITOR.TextTransformation,
+                    window.CKEDITOR.Underline
+                ],
             }).catch((error) => {
                 console.error(error);
             });
