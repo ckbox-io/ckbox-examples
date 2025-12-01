@@ -8,8 +8,8 @@
     "start": "vite preview --port 4137"
   },
   "dependencies": {
-    "@ckbox/components": "^2.9.1",
-    "@ckbox/core": "^2.9.1",
+    "@ckbox/components": "^2.9.2",
+    "@ckbox/core": "^2.9.2",
     "react": "^18.3.0",
     "react-dom": "^18.3.0"
   },

@@ -8,23 +8,23 @@
     "start": "http-server dist/angular/browser -p 4137"
   },
   "dependencies": {
-    "@angular/animations": "^17.0.0",
-    "@angular/common": "^17.0.0",
-    "@angular/compiler": "^17.0.0",
-    "@angular/core": "^17.0.0",
-    "@angular/forms": "^17.0.0",
-    "@angular/platform-browser": "^17.0.0",
-    "@angular/platform-browser-dynamic": "^17.0.0",
-    "@angular/router": "^17.0.0",
-    "ckbox": "^2.9.1",
+    "@angular/animations": "^21.0.1",
+    "@angular/common": "^21.0.1",
+    "@angular/compiler": "^21.0.1",
+    "@angular/core": "^21.0.1",
+    "@angular/forms": "^21.0.1",
+    "@angular/platform-browser": "^21.0.1",
+    "@angular/platform-browser-dynamic": "^21.0.1",
+    "@angular/router": "^21.0.1",
+    "ckbox": "^2.9.2",
     "rxjs": "~7.8.0",
     "tslib": "^2.3.0",
-    "zone.js": "~0.14.2"
+    "zone.js": "~0.15.0"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^17.0.6",
-    "@angular/cli": "^17.0.6",
-    "@angular/compiler-cli": "^17.0.0",
+    "@angular-devkit/build-angular": "^21.0.1",
+    "@angular/cli": "^21.0.1",
+    "@angular/compiler-cli": "^21.0.1",
     "@types/jasmine": "~5.1.0",
     "http-server": "^14.1.1",
     "jasmine-core": "~5.1.0",
@@ -33,6 +33,6 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
-    "typescript": "~5.2.2"
+    "typescript": "~5.9.3"
   }
 }
