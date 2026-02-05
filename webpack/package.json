@@ -7,7 +7,7 @@
     "build": "webpack"
   },
   "dependencies": {
-    "ckbox": "^2.10.0"
+    "ckbox": "^2.10.1"
   },
   "devDependencies": {
     "@types/node": "^22.19.8",

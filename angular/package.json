@@ -16,7 +16,7 @@
     "@angular/platform-browser": "^21.1.2",
     "@angular/platform-browser-dynamic": "^21.1.2",
     "@angular/router": "^21.1.2",
-    "ckbox": "^2.10.0",
+    "ckbox": "^2.10.1",
     "rxjs": "~7.8.2",
     "tslib": "^2.8.1",
     "zone.js": "~0.15.1"

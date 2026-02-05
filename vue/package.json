@@ -9,7 +9,7 @@
     "start": "vite preview --port 4137"
   },
   "dependencies": {
-    "ckbox": "^2.10.0",
+    "ckbox": "^2.10.1",
     "vue": "^3.5.27",
     "vue-router": "^4.6.4"
   },
