@@ -8,10 +8,10 @@
     "start": "vite preview --port 4137"
   },
   "dependencies": {
-    "ckbox": "^2.9.2"
+    "ckbox": "^2.10.1"
   },
   "devDependencies": {
     "typescript": "~5.9.3",
-    "vite": "^7.1.9"
+    "vite": "^7.3.1"
   }
 }
