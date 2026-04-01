@@ -15,5 +15,6 @@ CKBox.mount(app, {
         }
     },
     dialog: true,
-    tokenUrl: 'https://your.token.url'
+    serviceOrigin: 'https://ckbox.cke-cs-dev.com',
+    tokenUrl: 'https://768scew4f6zw.cke-cs-dev.com/token/dev/74188cf8ad0c10d9371edb51c6c558168319cc5d528d2cb9caa74795d8a8?limit=10'
 });
