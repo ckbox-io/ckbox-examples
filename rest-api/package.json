@@ -6,7 +6,10 @@
   },
   "private": true,
   "dependencies": {
-    "axios": "^1.15.0",
+    "axios": "^1.15.2",
     "jsonwebtoken": "^9.0.3"
+  },
+  "overrides": {
+    "follow-redirects": "^1.16.0"
   }
 }
