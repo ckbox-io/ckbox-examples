@@ -36,6 +36,8 @@
     "typescript": "~5.9.3"
   },
   "overrides": {
-    "follow-redirects": "^1.16.0"
+    "follow-redirects": "^1.16.0",
+    "uuid": "^11.1.1",
+    "webpack-dev-server": "^5.2.4"
   }
 }
