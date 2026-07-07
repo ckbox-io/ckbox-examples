@@ -34,11 +34,5 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~6.0.3"
-  },
-  "overrides": {
-    "follow-redirects": "^1.16.0",
-    "shell-quote": "^1.8.4",
-    "uuid": "^11.1.1",
-    "webpack-dev-server": "^5.2.4"
   }
 }
