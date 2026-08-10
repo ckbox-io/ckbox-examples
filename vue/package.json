@@ -9,17 +9,18 @@
     "start": "vite preview --port 4137"
   },
   "dependencies": {
-    "ckbox": "^2.13.0",
-    "vue": "^3.5.40",
+    "ckbox": "^2.13.1",
+    "vue": "^3.5.41",
     "vue-router": "^4.6.4"
   },
   "devDependencies": {
     "@tsconfig/node22": "^22.0.5",
     "@types/node": "^22.20.1",
     "@vitejs/plugin-vue": "^6.0.8",
-    "@vue/tsconfig": "^0.8.1",
+    "@vue/tsconfig": "^0.9.1",
+    "npm-run-all2": "^8.0.4",
     "typescript": "~5.9.3",
     "vite": "^7.3.6",
-    "vue-tsc": "^3.3.7"
+    "vue-tsc": "^3.3.9"
   }
 }
